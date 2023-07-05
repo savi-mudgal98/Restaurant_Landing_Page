@@ -29,14 +29,14 @@
    .navigation ul{ 
     padding-top: 30px;
     padding-left: 30px;
-    padding-right: 30px;} 
+    padding-right: 5px;} 
 
 
     /* banner */
 .banner
 {
     background-image: url('/images/banner.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
@@ -99,8 +99,8 @@
 #special .container .overlay{
     position: absolute;
     top: 0px;
-    left: 0px;
-    right: 0px;
+    left: 350px;
+    right: 350px;
     bottom: 0px;
     opacity: 0;
     background-color: orangered;
@@ -110,6 +110,7 @@
 #special .container .overlay .text{
     color: white;
     position: absolute;
+    top:20px;
     right: 0px;
     left: 20px;
     right: 20px;
@@ -120,26 +121,13 @@
 
 #special .container:hover .overlay
 {
-     opacity: 0.3;     
+     opacity: 0.8;     
 }
 
-.swiper{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+#special img
+{
+    height: 400px; width:300px;
 }
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-  }
-
-  .swiper-slide img
-  {    height:350px;
-    width:250px;
-    border:5px solid white;}
 
 /* menu */
 #menu{
@@ -148,6 +136,30 @@
     height: 800px;
 }
 
+#menu img{
+
+    height: 100px; width: 120px; border-radius: 50%; 
+}
+
+#menu .menu .nav{margin: 30px;}
+
+#starters div{display: flex;}
+#starters{display: flex;}
+
+#breakfast div{display: flex;}
+#breakfast{display: flex;}
+
+#lunch div{display: flex;}
+#lunch{display: flex;}
+
+#drinks div{display: flex;}
+#drinks{display: flex;}
+
+#menu .menu p{color: rgb(224, 112, 71); font-size: 30px; font-family:cursive; }
+
+.menu .nav-link{ color: rgb(224, 112, 71); font-size: 30px; font-family:cursive;}
+.menu .nav-item .nav-link .active{ color: white; font-size: 30px; font-family:cursive;}
+
 /* team */
 
 #team{
@@ -155,7 +167,7 @@
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
   background-repeat: no-repeat;
   width: 100%;
-  height: 700px;
+  min-height: 700px;
  background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -171,7 +183,7 @@
 
 .contain{
  
-    height: 500px;
+    min-height: 500px;
     width:350px;
     background-color: beige;
     margin-right: 30px;
@@ -279,7 +291,7 @@
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
     height: 800px;
-    
+    padding: 30px 70px ;
 }
 
 .blogs{
@@ -291,7 +303,7 @@
 
 .blogs .b1
 {
-    height: 250px;
+    height: 220px;
     width:500px;
     background-color: bisque;
     display: flex;
@@ -315,17 +327,17 @@
     flex-direction: row;
 }
 
-.basic,.pro,.platinum{height: 600px; width:400px; border:solid 2px orangered; margin-right:20px;}
+.basic,.pro,.platinum{height: 600px; width:330px; border:solid 2px orangered; margin: 20px; }
  .one{
-     height: 170px;
-     width: 400px;
+     height: 120px;
+     width: 330px;
      background-color: orangered;
      padding-top: 40px;
 }
 .one p{color:white; font-weight: bolder;}
 .two{
      height: 120px;
-     width: 400px;
+     width: 330px;
      background-color: lightgrey;
      padding-top: 30px;
 }
@@ -343,8 +355,9 @@ grid-template-rows: 25px 25px 25px 25px 25px 25px ;}
 #reservation 
 {
     
-    margin-top: 200px;
-    margin-left: 200px;
+     margin: 100px 130px;
+     margin-top: 200px;
+
     text-align: center;
 }
 
@@ -407,3 +420,62 @@ footer{
     text-align: center;
     border-top: 7px dotted gray;
 }
+
+/* @media screen and (min-width: 733px)
+{
+    
+    #about .main{display: block; width: 100%;}
+
+   #team .contain{     */
+    /* height: auto; */
+    /* width:100%;}
+
+    #gallery .gallery img{
+        height: auto;
+        width: 100%;
+    }
+
+    .blogs .b1
+{
+   
+    height: auto;
+    width:100%;
+
+}
+
+.basic,.pro,.platinum{height: auto; width:100%; }
+
+
+#contact .contact div{
+    height: auto;
+    width: 100%;
+}
+}
+
+@media screen and (min-width: 949px)
+{
+    #about .main{display: block;}
+    #team .contain{    
+        /* height: auto; */
+        /* width:100%;}
+
+        #gallery .gallery img
+        {
+            height: auto;
+            width: 100%;
+        }
+
+        .blogs .b1
+{
+    height: 220px;
+    width:500px;
+}
+
+.basic,.pro,.platinum{height: 600px; width:330px; }
+
+#contact .contact div{
+    height: auto;
+    width: 50%;
+} */
+
+} */ */
