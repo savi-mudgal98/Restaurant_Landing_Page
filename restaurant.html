@@ -1,610 +1,801 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="restaurant.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="restaurant.css">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  
-  
-  
+
+    <!-- aos link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 
 </head>
+
 <body>
-    <nav>
-        <div class="navigation">
-      <img src="/images/logo.png">;
-      <ul>
-         <li>HOME</li>
-         <li>ABOUT US</li>
-         <li>MENU</li>
-         <li>TEAM</li>
-         <li>GALLERY</li>
-         <li>BLOG</li>
-         <li>PRICING</li>
-         <li>RESERVATION</li>
-         <li>CONTACT US</li>
-      </ul>
-        
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navi">
+    <div class="container">
+      <a class="navbar-brand" href="#"><span><img src="/images/logo.png"></span></a>
+      <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT_US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">TEAM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-   
- 
-
-    <div class="banner">
-    <h1 style="font-size: 70px; color: white; padding-top: 30px;">Dinner with us Officemates_</h1>
-     <h2 style="font-size: 40px; color: white; padding-top: 30px; color: orangered;" >Accidental appearances</h2>
-     <p style="font-size: 20px; color: white; padding-top: 30px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod</p>
-     <button style="font-size: 25px; color: white; background-color: orangered; padding:15px 25px; margin-top: 30px;">BOOK MY TABLE</button>
     </div>
+  </nav>
+
+
+
+  <div class="banner">
+    <h1 style="font-size: 70px; color: white; padding-top: 120px;">Dinner with us Officemates_</h1>
+    <h2 style="font-size: 40px; color: white; padding-top: 30px; color: orangered;">Accidental appearances</h2>
+    <p style="font-size: 20px; color: white; padding-top: 30px;">Lorem ipsum dolor sit amet, consectetuer adipiscing
+      elit, sed diem nonummy nibh euismod</p>
+    <button
+      style="font-size: 25px; color: white; background-color: orangered; padding:15px 25px; margin-top: 30px;">BOOK MY
+      TABLE</button>
+  </div>
+
+
+
+  <div id="aboutus" data-aos="fade-up">
     
+    <div class="row">
 
-
-    <div id="aboutus">
-        <div class="main col-lg-6 col-md-12 col-sm-12">
-        <img  class="pic1" src="/images/about-main.jpg">;
-            <div class="sub">
-            <img  class="pic2" src="/images/about-inset.jpg">;
-            </div>
-        </div class="main col-lg-6 col-md-12 col-sm-12">
-        <div>
-        <h1 style="font-size: 50px; color: orangered; font-family: Georgia, 'Times New Roman', Times, serif;">About Us</h1>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <h1 style="font-size: 50px; color: orangered; font-family: Georgia, 'Times New Roman', Times, serif;">About Us
+        </h1>
         <h2 style="font-size: 25px; color: black">IT STARTED, QUITE SIMPLY, LIKE THIS...</h2>
-        <p style="font-size: 20px; color: grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm incididunt ut labore <br>et dolore magna aliqua. Ut enim ad minim venia, nostrud exercitation ullamco.<br>
+        <p style="font-size: 20px; color: grey;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm
+          incididunt ut labore <br>et dolore magna aliqua. Ut enim ad minim venia, nostrud exercitation ullamco.<br>
 
-            Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis <br>
-            dis parturient montes, nascetur ridiculus mus. quam felisorat, ultricies nec, Aenean <br>
-             commodo ligula eget dolor penatibu set magnis is parturient montes, nascetur ridiculus <br>
-              mus. quam felisorat, ultricies nec, pellentesque eu, pretium quis, sem. quat massa quis  <br>
-              enim. Donec vitae sapien ut libero venenatis fauci Nullam quis ante. Etiam sit amet rci <br>
-               eget eros. <br>
-              </div>
-         </p> <br>
-       </div>
+          Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis <br>
+          dis parturient montes, nascetur ridiculus mus. quam felisorat, ultricies nec, Aenean <br>
+          commodo ligula eget dolor penatibu set magnis is parturient montes, nascetur ridiculus <br>
+          mus. </p><br>
+      </div>
+
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="main">
+          <img class="pic1" src="/images/about-main.jpg">
+        </div>
+        <div class="sub">
+          <img class="pic2" src="/images/about-inset.jpg">
+        </div>
+      </div>
+
+
+      <br>
+    </div>
+    </div>
+  
+
+
+  <div id="special" data-aos="fade-up">
+    
+
+    <h2 style="font-size: 40px; color: orangered; font-family: Georgia, 'Times New Roman', Times, serif;">Today's
+      Special</h2>
+    <p style="font-size: 20px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; margin-bottom: 80px;">Lorem ipsum dolor
+      sit amet, consectetur adipiscing elit, sed do eiusm incididunt ut labore et dolore magna <br>
+      aliqua. Ut enim ad minim venia,nostrud exercitation ullamco.<br></p>
+
+
+    <div class="special">
+           
       
-      
-     <div id="special">
-     
-      
-          <h2 style="font-size: 40px; color: orangered; font-family: Georgia, 'Times New Roman', Times, serif;">Today's Special</h2>
-          <p style="font-size: 20px; color: white; font-family: Georgia, 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm incididunt ut labore et dolore magna <br>
-            aliqua. Ut enim ad minim venia,nostrud exercitation ullamco.<br></p>
+          <div class="container">
+            <img src="/images/special-menu-1.jpg" alt="...">
+            <div class="overlay">
+              <div class="text">
+                <h2>Garlic Sticks</h2>
+               
+              </div>
+            </div>
+          </div>
 
-     
-            <div class="special">
-              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active container">
-                    
-                    <img src="/images/special-menu-1.jpg" alt="...">
-                    <div class="overlay">
-                      <div class="text">
-                         <h2>GARLIC STICKS</h2>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                           sed do eiusm incididunt ut labore et dolore magna</p>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="carousel-item container">
-                    <img src="/images/special-menu-2.jpg" alt="...">
-                    <div class="overlay">
-                      <div class="text">
-                         <h2>ITALIAN PIZZA</h2>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                           sed do eiusm incididunt ut labore et dolore magna</p>
-                      </div>
-                  </div>
-                  </div>
-                  <div class="carousel-item container">
-                    <img src="/images/special-menu-3.jpg" alt="...">
-                    <div class="overlay">
-                      <div class="text">
-                         <h2>SPRING ROLLS</h2>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                           sed do eiusm incididunt ut labore et dolore magna</p>
-                      </div>
-                  </div>
-                  </div>
+          <div class="container">
+            <img src="/images/special-menu-2.jpg" alt="...">
+            <div class="overlay">
+              <div class="text">
+                <h2>Italian Pizza</h2>
+               
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <img src="/images/special-menu-3.jpg" alt="...">
+            <div class="overlay">
+              <div class="text">
+                <h2>Spring Rolls</h2>
+               
+              </div>
+            </div>
+            </div>
+
+            <div class="container">
+              <img src="/images/gallery_03.jpg" alt="...">
+              <div class="overlay">
+                <div class="text">
+                  <h2>Veg. Curry</h2>
+                 
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
               </div>
-              </div>
-          
 
-
-    <div id="menu">
-        <h2 style="font-size: 40px; color: orangered; font-family: Georgia, 'Times New Roman', Times, serif;">Our Menu</h2>
-        <p style="font-size: 20px; color: grey; font-family: Georgia, 'Times New Roman', Times, serif;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in <br>
-            some form, by injected humour, or randomised words which don't look even slightly believable.
-
-       <div class="menu">
-              <!-- Nav tabs -->
-              <ul class="nav nav-underline" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" data-bs-toggle="tab" href="#starters">Starters</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#breakfast">Breakfast</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#lunch">Lunch</a>          
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-bs-toggle="tab" href="#drinks">Drinks</a>
-                </li>
-              </ul>
-            
-              <!-- Tab panes -->
-              <div class="tab-content">
-                <div id="starters" class=" tab-pane active">
-                  <div>
-                  <img src="/images/menu-item-thumbnail-01.jpg" >
-                  <p>Garlic Bread</p>
-                </div>
-                <div>
-                  <img src="/images/menu-item-thumbnail-02.jpg" >
-                  <p>Mexico Salad</p>
-                </div>
-                <div>
-                  <img src="/images/menu-item-thumbnail-03.jpg" >
-                  <p>Seasoned Fish</p>
-
-                </div>
-                </div>
-
-                <div id="breakfast" class=" tab-pane fade">
-                   <div>
-                  <img src="/images/menu-item-thumbnail-01.jpg" >
-                  <p>Garlic Bread</p>
+              <div class="container" >
+                <img src="/images/gallery_04.jpg" alt="...">
+                <div class="overlay">
+                  <div class="text">
+                    <h2>Salami Salad</h2>
+                   
                   </div>
-                  <div>
-                  <img src="/images/menu-item-thumbnail-04.jpg" >
-                  <p>Tropical Pizza</p>
-                  </div>
-                  <div>
-                  <img src="/images/menu-item-thumbnail-07.jpg" >
-                  <p>Coconut Delight</p>
+                </div>
+                </div>
+
+                <div class="container">
+                  <img src="/images/gallery_05.jpg" alt="...">
+                  <div class="overlay">
+                    <div class="text">
+                      <h2>Exotic Fruit Tray</h2>
+                     
                     </div>
-                
-                </div>
-
-                <div id="lunch" class=" tab-pane fade"><br>
-                  <div>
-                  <img src="/images/menu-item-thumbnail-03.jpg" >
-                  <p>Seasoned Fish</p>
-                </div>
-                  <div>
-                  <img src="/images/menu-item-thumbnail-04.jpg" >
-                  <p>Tropical Pizza</p>
                   </div>
-                  <div>
-                  <img src="/images/menu-item-thumbnail-05.jpg" >
-                  <p>Veg. Curry</p>
-                </div>
-                  <div>
-                  <img src="/images/menu-item-thumbnail-06.jpg" >
-                   <p>Vegetable Munchurian</p>
                   </div>
-                 
-                </div>
 
-                <div id="drinks" class=" tab-pane fade"><br>
-                  <div>
-                  <img src="/images/menu-item-thumbnail-08.jpg" >
-                  <p>Indian Tea</p>
-                </div>
-                  <div>
+                  <div class="container">
+                    <img src="/images/gallery_06.jpg" alt="...">
+                    <div class="overlay">
+                      <div class="text">
+                        <h2>Sushi</h2>
+                       
+                      </div>
+                    </div>
+                    </div>
 
-                  <img src="/images/menu-item-thumbnail-09.jpg" >
-                  <p>Exotic Beer</p>
-                </div>
-                  <div>
-                  <img src="/images/menu-item-thumbnail-10.jpg" >
-                  <p>Wine</p>
-                </div>
-                 
-                 
-                </div>
-              </div>
-              </div>
-            </div>
+                    
+          </div>
+        </div>
+
     
-       
-    <div id="team">
-        <h2 style="font-size: 40px; color: white; font-family: Georgia, 'Times New Roman', Times, serif;">Our Team</h2>
-        <p style="font-size: 20px; color: white; font-family: Georgia, 'Times New Roman', Times, serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm incididunt ut labore et dolore magna <br>
-          aliqua. Ut enim ad minim venia,nostrud exercitation ullamco.<br></p>
-          <div class="team">
-           
-            <div class="contain col-lg-4 col-md-6 col-sm-12">
-            <div class="i1">
-            <img src="/images/staff-01.jpg">
-            <div class="overlay"></div>
-            </div>
-              
+    
+          <div id="menu" data-aos="fade-up">
+            <h2 style="font-size: 40px; color: orangered; font-family: Georgia, 'Times New Roman', Times, serif;">Our Menu</h2>
+            <p style="font-size: 20px; color: grey; font-family: Georgia, 'Times New Roman', Times, serif;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in <br>
+                some form, by injected humour, or randomised words which don't look even slightly believable.
+    
+                <div class="container">
+  <!-- Nav tabs -->
+  <ul class="nav nav-underline" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#home">STARTERS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu1">
+        BREAKFAST</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu2">LUNCH</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu3">DRINKS</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+
+
+    <div id="home" class="tab-pane active">
+      <div>
+        <img src="/images/menu-item-thumbnail-01.jpg">
+        <p>Garlic Bread</p>
+      </div>
+      <div>
+        <img src="/images/menu-item-thumbnail-02.jpg">
+        <p>Mexico Salad</p>
+      </div>
+      <div>
+        <img src="/images/menu-item-thumbnail-03.jpg">
+        <p>Seasoned Fish</p>
+      </div>
+    </div>
+
+    <div id="menu1" class=" tab-pane fade"><br>
+      <div>
+        <img src="/images/menu-item-thumbnail-03.jpg">
+        <p>Seasoned Fish</p>
+      </div>
+      <div>
+        <img src="/images/menu-item-thumbnail-04.jpg">
+        <p>Tropical Pizza</p>
+      </div>
+      <div>
+        <img src="/images/menu-item-thumbnail-05.jpg">
+        <p>Veg. Curry</p>
+      </div>
+      <div>
+        <img src="/images/menu-item-thumbnail-06.jpg">
+        <p>Vegetable Munchurian</p>
+      </div>
+
+    </div>
+
+    <div id="menu2" class=" tab-pane fade"><br>
+
+      <div>
+        <img src="/images/menu-item-thumbnail-01.jpg">
+        <p>Garlic Bread</p>
+      </div>
+      <div>
+        <img src="/images/menu-item-thumbnail-04.jpg">
+        <p>Tropical Pizza</p>
+      </div>
+      <div>
+        <img src="/images/menu-item-thumbnail-07.jpg">
+        <p>Coconut Delight</p>
+      </div>
+
+    </div>
+
+    <div id="menu3" class=" tab-pane fade"><br>
+
+      <div>
+        <img src="/images/menu-item-thumbnail-08.jpg">
+        <p>Indian Tea</p>
+      </div>
+      <div>
+
+        <img src="/images/menu-item-thumbnail-09.jpg">
+        <p>Exotic Beer</p>
+      </div>
+      <div>
+        <img src="/images/menu-item-thumbnail-10.jpg">
+        <p>Wine</p>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</div>
+
+
+  <div id="team" data-aos="fade-up">
+ 
+      <h2 style="font-size: 40px; color: white; font-family: Georgia, 'Times New Roman', Times, serif;">Our Team</h2>
+      <p style="font-size: 20px; color: white; font-family: Georgia, 'Times New Roman', Times, serif;">Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit, sed do eiusm incididunt ut labore et dolore magna <br>
+        aliqua. Ut enim ad minim venia,nostrud exercitation ullamco.<br></p>
+      <div class="team">
+
+        <div class="row">
+          <div class=" col-lg-4 col-md-6 col-sm-12">
+            <div class="contain">
+              <div class="i1">
+                <img src="/images/staff-01.jpg" />
+                <div class="overlay"></div>
+              </div>
+
               <div class="t1 ">
-            <h3 >John Doggett</h3>
-              <p >Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula</p><hr>
-               <div class="overlay"></div>
+                <h3>John Doggett</h3>
+                <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
+                  sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula</p>
+                
+                <div class="overlay"></div>
+              </div>
             </div>
           </div>
-           
-          <div class="contain col-lg-4 col-md-6 col-sm-12">
-            <div class="i1">
-            <img src="/images/staff-02.jpg">
-            <div class="overlay"></div>
-            </div>
-              
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="contain ">
+              <div class="i1">
+                <img src="/images/staff-02.jpg">
+                <div class="overlay"></div>
+              </div>
+
               <div class="t1">
-            <h3 >John Doggett</h3>
-              <p >Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula</p><hr>
-               <div class="overlay"></div>
+                <h3>John Doggett</h3>
+                <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
+                  sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula</p>
+                <hr>
+                <div class="overlay"></div>
+              </div>
             </div>
           </div>
 
-          <div class="contain col-lg-4 col-md-6 col-sm-12">
-            <div class="i1">
-            <img src="/images/staff-03.jpg">
-            <div class="overlay"></div>
-            </div>
-              
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="contain ">
+              <div class="i1">
+                <img src="/images/staff-03.jpg">
+                <div class="overlay"></div>
+              </div>
+
               <div class="t1">
-            <h3 >John Doggett</h3>
-              <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula</p><hr>
-               <div class="overlay"></div>
+                <h3>John Doggett</h3>
+                <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
+                  sit amet nibh. Donec sodales sagittis magna. Aenean commodo ligula</p>
+                <hr>
+                <div class="overlay"></div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  
+
+  <div id="gallery" data-aos="fade-up">
+
+    <h1 style="font-size: 40px; color: orangered; font-family: Georgia, 'Times New Roman', Times, serif;">Our Gallery
+    </h1>
+    <p style="font-size: 20px; color: grey; font-family: Georgia, 'Times New Roman', Times, serif;">There are many
+      variations of passages of Lorem Ipsum available</p>
+
+    <div class="gallery">
+      
+      <div class="row">
+        <div class=" col-lg-8 col-md-12 col-sm-12">
+          <div class="container" data-aos="zoom-in">
+            <img src="/images/gallery_01.jpg" class="img-fluid">
+            <div class="l1"></div>
           </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="container " data-aos="zoom-in">
+            <img src="/images/gallery_02.jpg" class="img-fluid">
+            <div class="l1"></div>
           </div>
+        </div>
+      </div>
 
-          <div id="gallery">
-            <h1 style="font-size: 40px; color: orangered; font-family: Georgia, 'Times New Roman', Times, serif;">Our Gallery</h1>
-            <p style="font-size: 20px; color: grey; font-family: Georgia, 'Times New Roman', Times, serif;">There are many variations of passages of Lorem Ipsum available</p>
-           
-            <div class="gallery">
-              <table>
-                <tr>
-                  <td colspan="2">
-                    <div class="container col-lg-8 col-md-12 col-sm-12">
-                    <img src="/images/gallery_01.jpg">
-               <div class="l1"></div>
-                     </div>
-                    </td>
-
-                <td>
-                 <div class="container col-lg-4 col-md-6 col-sm-12">
-                 <img src="/images/gallery_02.jpg">
-               <div class="l1"></div>
-                  </div>
-               </td>
-              </tr>
-            
-              <tr>
-               <td>
-                <div class="container col-lg-4 col-md-6 col-sm-12">
-              <img src="/images/gallery_03.jpg">
-              <div class="l1"></div>  
-              </div>
-              </td>
-
-              <td>
-              <div class="container col-lg-4 col-md-6 col-sm-12"> 
-              <img src="/images/gallery_04.jpg">
-              <div class="l1"></div>
-              </div>
-             </td>
-
-             <td>
-              <div class="container col-lg-4 col-md-6 col-sm-12">
-              <img src="/images/gallery_05.jpg">
-              <div class="l1"></div>
-              </div>
-              </td>
-
-              </tr>
-
-              <tr>
-          
-                 
-              <td colspan="2">
-                <div class="container col-lg-4 col-md-6 col-sm-12">
-                <img src="/images/gallery_06.jpg">
-              <div class="l1"></div>
-              </div>
-               </td>
-                 
-                <td>
-                  <div class="container col-lg-8 col-md-12 col-sm-12">
-                  <img src="/images/gallery_07.jpg">
-                <div class="l1"></div>
-                </div>
-              </td>
-              </tr>
-            
-              <tr>
-               <td>
-               <div class="container col-lg-4 col-md-6 col-sm-12">
-              <img src="/images/gallery_08.jpg">
-              <div class="l1"></div>
-              </div>
-              </td>
-
-              <td>
-              <div class="container col-lg-4 col-md-6 col-sm-12">
-              <img src="/images/gallery_09.jpg">
-              <div class="l1"></div>
-              </div>
-              </td>
-              
-              <td>
-              <div class="container col-lg-4 col-md-6 col-sm-12"> 
-             <img src="/images/gallery_10.jpg">
-              <div class="l1"></div>
-              </div>
-              </td>
-              </tr>
-            
-              </table>
-             </div>  
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="container " data-aos="zoom-in">
+            <img src="/images/gallery_03.jpg" class="img-fluid">
+            <div class="l1"></div>
           </div>
+        </div>
 
-    <div id="blog">
-      <h1 style="font-size: 50px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">Our Blog</h1>
-      <div class="blogs">
 
-      <div class="b1 col-lg-6 col-md-6 col-sm-12">
-        <img src="/images/featured-image-01.jpg">
-        <div>
-        <p style="color:gray; font-size: 15px; padding-top: 60px;">25 NOVEMBER, 2014</p><hr>
-        <p  style="color:black; font-size: 30px;">LATEST RECIPES JUST IN!</p><hr>
-        <p style="color:gray; font-size: 15px;">BY John Dogget</p>
-      </div>
-      </div>
-      <div class="b1 col-lg-6 col-md-6 col-sm-12">
-        <img src="/images/featured-image-02.jpg">
-        <div>
-        <p style="color:gray; font-size: 15px; padding-top: 60px;">25 NOVEMBER, 2014</p><hr>
-        <p  style="color:black; font-size: 30px;">NEW RECRUITS HAVE ARRIVED!</p><hr>
-        <p style="color:gray; font-size: 15px;">BY John Dogget</p>
-      </div>
-      </div>
-      <div class="b1 col-lg-6 col-md-6 col-sm-12">
-        <img src="/images/featured-image-03.jpg">
-        <div>
-        <p style="color:gray; font-size: 15px; padding-top: 60px;">25 NOVEMBER, 2014</p><hr>
-        <p  style="color:black; font-size: 30px;">BAKING TIPS FROM THE PROS</p><hr>
-        <p style="color:gray; font-size: 15px;">BY John Dogget</p>
-      </div>
-      </div>
-      <div class="b1 col-lg-6 col-md-6 col-sm-12">
-        <img src="/images/featured-image-04.jpg">
-        <div>
-        <p style="color:gray; font-size: 15px; padding-top: 60px;">25 NOVEMBER, 2014</p><hr>
-        <p  style="color:black; font-size: 30px;">ALL YOUR EGGS BELONG TO US</p><hr>
-        <p style="color:gray; font-size: 15px;">BY John Dogget</p>
-      </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="container " data-aos="zoom-in">
+            <img src="/images/gallery_04.jpg" class="img-fluid">
+            <div class="l1"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="container " data-aos="zoom-in">
+            <img src="/images/gallery_05.jpg" class="img-fluid">
+            <div class="l1"></div>
+          </div>
+        </div>
       </div>
 
+      <div class="row">
+        <div class=" col-lg-8 col-md-12 col-sm-12">
+          <div class="container" data-aos="zoom-in">
+            <img src="/images/gallery_06.jpg" class="img-fluid">
+            <div class="l1"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="container " data-aos="zoom-in">
+            <img src="/images/gallery_07.jpg" class="img-fluid">
+            <div class="l1"></div>
+          </div>
+        </div>
       </div>
-      <button style="color: white; padding:20px 25px; background-color: orangered; font-size: 20px ; font-weight:bolder; border: none; margin-top: 30px; margin: auto;">VIEW THE BLOG</button>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="container " data-aos="zoom-in">
+            <img src="/images/gallery_08.jpg" class="img-fluid">
+            <div class="l1"></div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="container " data-aos="zoom-in">
+            <img src="/images/gallery_09.jpg" class="img-fluid">
+            <div class="l1"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="container " data-aos="zoom-in">
+            <img src="/images/gallery_10.jpg" class="img-fluid">
+            <div class="l1"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+
+  <div id="blog" data-aos="fade-up">
+    <h1
+      style="font-size: 50px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+      Our Blog</h1>
+    <div class="blogs">
+
+      <div class="row">
+        <div class=" col-lg-6 col-md-6 col-sm-12">
+          <div class="b1" data-aos="zoom-in">
+            <img src="/images/featured-image-01.jpg">
+            <div>
+              <p style="color:gray; font-size: 15px; padding-top: 30px;">25 NOVEMBER, 2014</p>
+              <hr>
+              <p style="color:black; font-size: 20px;">LATEST RECIPES JUST IN!</p>
+              <hr>
+              <p style="color:gray; font-size: 15px;">BY John Dogget</p>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-6 col-md-6 col-sm-12">
+          <div class="b1" data-aos="zoom-in">
+            <img src="/images/featured-image-02.jpg">
+            <div>
+              <p style="color:gray; font-size: 15px; padding-top: 30px;">25 NOVEMBER, 2014</p>
+              <hr>
+              <p style="color:black; font-size: 20px;">NEW RECRUITS HAVE ARRIVED!</p>
+              <hr>
+              <p style="color:gray; font-size: 15px;">BY John Dogget</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class=" col-lg-6 col-md-6 col-sm-12">
+          <div class="b1" data-aos="zoom-in">
+            <img src="/images/featured-image-03.jpg">
+            <div>
+              <p style="color:gray; font-size: 15px; padding-top: 30px;">25 NOVEMBER, 2014</p>
+              <hr>
+              <p style="color:black; font-size: 20px;">BAKING TIPS FROM THE PROS</p>
+              <hr>
+              <p style="color:gray; font-size: 15px;">BY John Dogget</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="b1" data-aos="zoom-in">
+            <img src="/images/featured-image-04.jpg">
+            <p style="color:gray; font-size: 15px; padding-top: 30px;">25 NOVEMBER, 2014</p>
+            <hr>
+            <p style="color:black; font-size: 20px;">ALL YOUR EGGS BELONG TO US</p>
+            <hr>
+            <p style="color:gray; font-size: 15px;">BY John Dogget</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div id="pricing">
-         <h1  style="font-size: 40px; color: orangered; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">Pricing</h1>
-         <p sty;e="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut orci varius, elementum lectus nec, aliquam 
-          lectus. Duis neque augue, maximus in sapien ut, porta pharetra odio.</p>
-         <div class="pricing">
-          <div class="basic col-lg-4 col-md-4 col-sm-12">
-               <div class="one">
-                <img src="/images/store.png">
-                <p>BASIC</p>
-                </div>
-                <div class="two" style="font-size: 40px; color: orangered;"><span style="font-size: 40px; color: black;">$30/</span>Month</div>
-                  <div class="points">
-                    <div>
-                    <p> One Website</p>
-                    </div><hr>
-                    <div>
-                    <p> One User</p>
-                    </div><hr>
-                    <div>
-                    <p> 10 GB Bandwidth</p>
-                    </div><hr>
-                    <div>
-                    <p>2GB Storage</p>
-                    </div><hr>
-                    <div>
-                    <p> Offline work</p>
-                    </div><hr>
-                    <div>
-                    <p> 24x7 Support</p>
-                    </div><hr>
-                  </div>
-               <button style="padding:10px 100px; color:white; background-color: orangered; font-size: 25px; ">Purchase Now</button>
-          </div>
-    
-          <div class="pro col-lg-4 col-md-4 col-sm-12">
+    <button
+      style="color: white; padding:10px 20px; background-color: orangered; font-size: 20px ; font-weight:bolder; border: none;">VIEW
+      THE BLOG</button>
+  </div>
+
+  <div id="pricing" data-aos="fade-up">
+    <h1
+      style="font-size: 40px; color: orangered; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+      Pricing</h1>
+    <p sty;e="text-align:center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut orci varius, elementum
+      lectus nec, aliquam
+      lectus. Duis neque augue, maximus in sapien ut, porta pharetra odio.</p>
+    <div class="pricing">
+
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="basic" data-aos="zoom-in">
             <div class="one">
-             <img src="/images/food.png">
-             <p>PRO</p>
-             </div>
-             <div class="two"  style="font-size: 40px; color: orangered;"><span style="font-size: 40px; color: black;">$60/</span>Month</div>
-               <div class="points">
-                 <div>
-                 <p> One Website</p>
-                 </div><hr>
-                 <div>
-                 <p> One User</p>
-                 </div><hr>
-                 <div>
-                 <p> 10 GB Bandwidth</p>
-                 </div><hr>
-                 <div>
-                 <p>2GB Storage</p>
-                 </div><hr>
-                 <div>
-                 <p> Offline work</p>
-                 </div><hr>
-                 <div>
-                 <p> 24x7 Support</p>
-                 </div><hr>
-               </div>
-            <button style="padding:10px 100px; color:white; background-color: orangered; font-size: 25px; ">Purchase Now</button>
-       </div>
+              <img src="/images/store.png">
+              <p>BASIC</p>
+            </div>
+            <div class="two" style="font-size: 30px; color: orangered;"><span
+                style="font-size: 30px; color: black;">$30/</span>Month</div>
+            <div class="points">
+              <div>
+                <p> One Website</p>
+              </div>
+              <div>
+                <p> One User</p>
+              </div>
+              <div>
+                <p> 10 GB Bandwidth</p>
+              </div>
+              <div>
+                <p>2GB Storage</p>
+              </div>
+              <div>
+                <p> Offline work</p>
+              </div>
+              <div>
+                <p> 24x7 Support</p>
+              </div>
+            </div>
+            <button style="padding:5px 80px; color:white; background-color: orangered; font-size: 25px; ">Purchase
+              Now</button>
+          </div>
+        </div>
 
-       <div class="platinum col-lg-4 col-md-4 col-sm-12">
-        <div class="one">
-         <img src="/images/coffee.png">
-         <p>PLATINUM</p>
-         </div>
-         <div class="two"  style="font-size: 40px; color: orangered;"><span style="font-size: 40px; color: black;">$90/</span>Month</div>
-           <div class="points">
-             <div>
-             <p> One Website</p>
-             </div><hr>
-             <div>
-             <p> One User</p>
-             </div><hr>
-             <div>
-             <p> 10 GB Bandwidth</p>
-             </div><hr>
-             <div>
-             <p>2GB Storage</p>
-             </div><hr>
-             <div>
-             <p> Offline work</p>
-             </div><hr>
-             <div>
-             <p> 24x7 Support</p>
-             </div><hr>
-           </div>
-        <button style="padding:10px 100px; color:white; background-color: orangered; font-size: 25px; ">Purchase Now</button>
-   </div>
-   </div>
-</div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="pro " data-aos="zoom-in">
+            <div class="one">
+              <img src="/images/food.png">
+              <p>PRO</p>
+            </div>
+            <div class="two" style="font-size: 30px; color: orangered;"><span
+                style="font-size: 30px; color: black;">$60/</span>Month</div>
+            <div class="points">
+              <div>
+                <p> One Website</p>
+              </div>
+              <div>
+                <p> One User</p>
+              </div>
+              <div>
+                <p> 10 GB Bandwidth</p>
+              </div>
+              <div>
+                <p>2GB Storage</p>
+              </div>
+              <div>
+                <p> Offline work</p>
+              </div>
+              <div>
+                <p> 24x7 Support</p>
+              </div>
+            </div>
+            <button style="padding:5px 80px; color:white; background-color: orangered; font-size: 25px; ">Purchase
+              Now</button>
+          </div>
+        </div>
 
-<div id="reservation">
-  <h1  style="font-size: 40px; color: orangered; font-family: Georgia, 'Times New Roman', Times, serif;">Reservations</h1>
-  <h3 style="font-size: 30px; color: black; font-family: Georgia, 'Times New Roman', Times, serif;">BOOKING FORM</h3>
-  <p style="font-size: 20px; color: grey; font-family: Georgia, 'Times New Roman', Times, serif;">PLEASE FILL OUT ALL REQUIRED* FIELDS. THANKS</p>
-  <form>
-  <table>
-    <tr>
-      <td>
-        <input type="text" placeholder="Name" class="col-lg-6 col-md-6 col-sm-12">
-      </td>
-      <td>
-        <input type="email" placeholder="Email id" class="col-lg-6 col-md-6 col-sm-12">
-      </td>
-    </tr>
-
-    <tr>
-      <td>
-        <input type="number" placeholder="Contact no." class="col-lg-6 col-md-6 col-sm-12">
-      </td>
-      <td>
-        <select name="persons" class="col-lg-6 col-md-6 col-sm-12">
-        <option selected>no. of persons</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        </select>
-      </td>
-    </tr>
-
-        <tr>
-      <td>
-        <input type="date" placeholder="Date" class="col-lg-6 col-md-6 col-sm-12">
-      </td>
-      <td>
-        <input type="time" placeholder="Time" class="col-lg-6 col-md-6 col-sm-12">
-      </td>
-    </tr>
-
-    <tr>
-      <td> 
-        <select name="food" class="col-lg-6 col-md-6 col-sm-12">
-          <option selected>preferred food</option>
-          <option>indian</option>
-          <option>continental</option>
-          <option>mexican</option>
-          </select>
-      </td>
-      <td>
-        <select name="occasion" class="col-lg-6 col-md-6 col-sm-12">
-          <option selected>occasion</option>
-          <option>wedding</option>
-          <option>birthday</option>
-          <option>anniversary</option>
-          </select>
-      </td>
-    </tr>
-  </table>
-  </form>
-  <button style="color: white; padding:20px 25px; background-color: orangered; font-size: 20px ; font-weight:bolder; border: none; margin-top: 30px;">BOOK MY TABLE</button>
-</div>
-
-    <div id="newsletter">
-      <h1 style="font-size: 40px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; padding-bottom:70px;">Newsletter</h1>
-      <p style="font-size: 20px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; padding-bottom: 70px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      <form>
-        <input type="email" placeholder="Enter ypur email id">
-      </form>
-    </div>
-
-    <div id="contact">
-         <img src="/images/logo.png" style="padding-top: 80px; padding-bottom: 50px;">
-       <div class="contact">
-         <div class="about col-lg-3 col-md-6 col-sm-12">
-        <h3>About Us</h3>
-        <p>Aenean commodo ligula eget dolor <br>
-          aenean massa. Cum sociis nat penatibu<br>
-           set magnis dis parturient montes.<br></p>
-      </div>
-      <div class="new col-lg-3 col-md-6 col-sm-12">
-        <h3>New Menu</h3>
-         <p> Italian Bomba Sandwich </p>
-         <p> Double Dose of Pork Belly</p>
-          <p>Spicy Thai Noodles</p>
-          <p>Triple Truffle Trotters</p>
-      </div>
-      <div class="contactus col-lg-3 col-md-6 col-sm-12">
-        <h3>Contact Us</h3>
-        <p>6 E Esplanade, St Albans VIC 3021, Australia</p>
-        <p>+91 80005 89080</p>
-        <p>support@foodfunday.com</p>
-      </div>
-      <div class="hours col-lg-3 col-md-6 col-sm-12">
-        <h3>Opening Hours</h3>
-        <p>Monday - Thursday</p>
-        
-        <span style="color:grey;">11:00 AM - 9:00 PM</span>
-        <p>Friday - Saturday</p>
-        
-        <span style="color:grey;">11:00 AM - 5:00 PM</span>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="platinum " data-aos="zoom-in">
+            <div class="one">
+              <img src="/images/coffee.png">
+              <p>PLATINUM</p>
+            </div>
+            <div class="two" style="font-size: 30px; color: orangered;"><span
+                style="font-size: 30px; color: black;">$90/</span>Month</div>
+            <div class="points">
+              <div>
+                <p> One Website</p>
+              </div>
+              <div>
+                <p> One User</p>
+              </div>
+              <div>
+                <p> 10 GB Bandwidth</p>
+              </div>
+              <div>
+                <p>2GB Storage</p>
+              </div>
+              <div>
+                <p> Offline work</p>
+              </div>
+              <div>
+                <p> 24x7 Support</p>
+              </div>
+            </div>
+            <button style="padding:5px 80px; color:white; background-color: orangered; font-size: 25px; ">Purchase
+              Now</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-    <footer>
-      <p style="color:white; font-size: 25px;">Copyright © 2017 Food Funday is powered by</p>
-    </footer>
+  <div id="reservation" data-aos="fade-up">
+   
+    <h1 style="font-size: 40px; color: orangered; font-family: Georgia, 'Times New Roman', Times, serif;">Reservations
+    </h1>
+    <h3 style="font-size: 30px; color: black; font-family: Georgia, 'Times New Roman', Times, serif;">BOOKING FORM</h3>
+    <p style="font-size: 20px; color: grey; font-family: Georgia, 'Times New Roman', Times, serif;">PLEASE FILL OUT ALL
+      REQUIRED* FIELDS. THANKS</p>
+    <form>
     
+         <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <input type="text" placeholder="Name">
+            </div>
+       
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <input type="email" placeholder="Email id">
+            </div>
+        </div>
   
-    </body>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <input type="number" placeholder="Contact no.">
+            </div>
+        
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <select name="persons">
+                <option selected>no. of persons</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <input type="date" placeholder="Date">
+            </div>
+        
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <input type="time" placeholder="Time">
+            </div>
+         </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <select name="food">
+                <option selected>preferred food</option>
+                <option>indian</option>
+                <option>continental</option>
+                <option>mexican</option>
+              </select>
+            </div>
+         
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <select name="occasion">
+                <option selected>occasion</option>
+                <option>wedding</option>
+                <option>birthday</option>
+                <option>anniversary</option>
+              </select>
+            </div>
+            </div>
+        
+    </form>
+    <button
+      style="color: white; padding:20px 25px; background-color: orangered; font-size: 20px ; font-weight:bolder; border: none; margin-top: 30px;">BOOK
+      MY TABLE</button>
+  </div>
+  
+
+  <div id="newsletter">
+    <h1
+      style="font-size: 40px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; padding-bottom:70px;">
+      Newsletter</h1>
+    <p
+      style="font-size: 20px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; padding-bottom: 70px;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <form>
+      <input type="email" placeholder="Enter ypur email id">
+    </form>
+  </div>
+
+  <div id="contact">
+    <img src="/images/logo.png" style="padding-top: 80px; padding-bottom: 50px;">
+    <div class="contact">
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="about my-3">
+            <h3>About Us</h3>
+            <p>Aenean commodo ligula eget dolor <br>
+              aenean massa. Cum sociis nat penatibu<br>
+              set magnis dis parturient montes.<br></p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="new my-3">
+            <h3>New Menu</h3>
+            <p> Italian Bomba Sandwich </p>
+            <p> Double Dose of Pork Belly</p>
+            <p>Spicy Thai Noodles</p>
+            <p>Triple Truffle Trotters</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="contactus my-3">
+            <h3>Contact Us</h3>
+            <p>6 E Esplanade, St Albans VIC 3021, Australia</p>
+            <p>+91 80005 89080</p>
+            <p>support@foodfunday.com</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="hours my-3">
+            <h3>Opening Hours</h3>
+            <p>Monday - Thursday</p>
+
+            <span style="color:grey;">11:00 AM - 9:00 PM</span>
+            <p>Friday - Saturday</p>
+
+            <span style="color:grey;">11:00 AM - 5:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p style="color:white; font-size: 25px;">Copyright © 2017 Food Funday is powered by</p>
+  </footer>
+
+
+<!-- slick -->
+<script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+
+  <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+  <script>
+  
+
+$('.special').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows:true,
+  swipeToSlide:true,
+  dots: true,
+});
+  </script>
+
+<script src="index.js"></script>
+
+  <!-- aos -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      window.addEventListener('load', AOS.refresh);
+    AOS.init({
+      offset:120,
+      duration:1000,
+    });
+  </script>
+</body>
+
 </html>
