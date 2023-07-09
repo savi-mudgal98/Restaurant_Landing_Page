@@ -38,7 +38,7 @@
     /* banner */
 .banner
 {
-    background-image: url('/images/banner.jpg');
+    background-image: url('images/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -84,7 +84,7 @@
 /* special */
 #special
 {
-    background-image: url("/images/special_menu_bg.jpg");
+    background-image: url("images/special_menu_bg.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -237,7 +237,7 @@
 /* team */
 
 #team{
-  background-image: url('/images/team_bg.jpg');
+  background-image: url('images/team_bg.jpg');
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
   background-repeat: no-repeat;
   width: 100%;
@@ -367,7 +367,7 @@
 /* blog */
 #blog
 {   
-    background-image: url('/images/blog_bg.jpg');
+    background-image: url('images/blog_bg.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -496,7 +496,7 @@
 /* newsletter */
 #newsletter
 {
-    background-image: url("/images/newsletter-bg.jpg");
+    background-image: url("images/newsletter-bg.jpg");
     background-attachment: fixed;
     width: 100%;
     height: auto;
@@ -514,7 +514,7 @@
 
 #contact
 {
-    background-image: url("/images/footer_background.jpg");
+    background-image: url("images/footer_background.jpg");
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
     background-repeat: repeat;
     background-size: cover;
@@ -575,7 +575,7 @@ footer{
     /* banner */
 .banner
 {
-    background-image: url('/images/banner.jpg');
+    background-image: url('images/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -621,7 +621,7 @@ footer{
 /* special */
 #special
 {
-    background-image: url("/images/special_menu_bg.jpg");
+    background-image: url("images/special_menu_bg.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -774,7 +774,7 @@ footer{
 /* team */
 
 #team{
-  background-image: url('/images/team_bg.jpg');
+  background-image: url('images/team_bg.jpg');
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
   background-repeat: no-repeat;
   width: 100%;
@@ -904,7 +904,7 @@ footer{
 /* blog */
 #blog
 {   
-    background-image: url('/images/blog_bg.jpg');
+    background-image: url('images/blog_bg.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -929,8 +929,8 @@ footer{
 
 #blog .blogs .b1
 {
-    min-height:200px ;
-    min-width:450px;
+    height:200px ;
+    width:450px;
     background-color: bisque;
     display: flex;
     flex-direction: row;
@@ -1039,7 +1039,7 @@ footer{
 /* newsletter */
 #newsletter
 {
-    background-image: url("/images/newsletter-bg.jpg");
+    background-image: url("images/newsletter-bg.jpg");
     background-attachment: fixed;
     width: 100%;
     height: auto;
@@ -1057,7 +1057,7 @@ footer{
 
 #contact
 {
-    background-image: url("/images/footer_background.jpg");
+    background-image: url("images/footer_background.jpg");
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
     background-repeat: repeat;
     background-size: cover;
